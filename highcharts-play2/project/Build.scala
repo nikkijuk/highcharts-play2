@@ -8,6 +8,16 @@ object ApplicationBuild extends Build {
   val appVersion      = "1.0-SNAPSHOT"
 
   val appDependencies = Seq(
+      
+    // webjars for play
+    "org.webjars" %% "webjars-play" % "2.1.0-3",
+
+	// webjar components
+	"org.webjars" % "jquery" % "2.0.3",
+	"org.webjars" % "bootstrap" % "3.0.0",
+	"org.webjars" % "highcharts" % "3.0.1",
+	//"org.webjars" % "highcharts" % "2.3.3",
+  
     // Add your project dependencies here,
     javaCore,
     javaJdbc,
